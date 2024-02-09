@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Timer() {
     const calculateTimeLeft = () => {
         const now = new Date();
-        const targetDate = new Date('March 15, 2024 00:00:00');
+        const targetDate = new Date('March 16, 2024 00:00:00');
         const difference = targetDate - now;
 
         if (difference > 0) {
@@ -29,27 +29,24 @@ function Timer() {
     }, []);
 
     return (
-        <div className='timer row justify-content-center'>
-            <div className='col-12 col-md-3 text-center  p-3'>
+        <div className='timer'>
+            <div className='timer-item'>
                 <p className='display-4'>{timeLeft.days.toString().padStart(2, '0')}</p>
-                <h2 className='h4'><span>Days</span></h2>
+                <h2 className='h4'>DAYS</h2>
             </div>
-            <div className='col-12 col-md-3 text-center  p-3'>
+            <div className='timer-item'>
                 <p className='display-4'>{timeLeft.hours.toString().padStart(2, '0')}</p>
-                <h2 className='h4'><span>Hours</span></h2>
+                <h2 className='h4'>HOURS</h2>
             </div>
-            <div className='col-12 col-md-3 text-center p-3'>
+            <div className='timer-item'>
                 <p className='display-4'>{timeLeft.minutes.toString().padStart(2, '0')}</p>
-                <h2 className='h4'><span>Minutes</span></h2>
+                <h2 className='h4'>MINUTES</h2>
             </div>
-            <div className='col-12 col-md-3 text-center p-3'>
+            <div className='timer-item'>
                 <p className='display-4'>{timeLeft.seconds.toString().padStart(2, '0')}</p>
-                <h2 className='h4'><span>Seconds</span></h2>
+                <h2 className='h4'>SECONDS</h2>
             </div>
         </div>
-
-
-
     );
 }
 

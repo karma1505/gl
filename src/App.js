@@ -24,7 +24,7 @@ function App() {
               {/* </div> */}
               <h1 className="hero glitch layers" data-text="glitch"><span>GLITCH</span></h1>
               <br />
-              <h3 className='subtitle'><span><b>UNLEASHING THE INNOVATION</b></span></h3>
+              <h3 className='subtitle'><span><b>UNLEASHING INNOVATION</b></span></h3>
             </div>
             <div className='timer'><Timer /></div>
           </div>

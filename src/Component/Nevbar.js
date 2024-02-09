@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUsers, faHandshake, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUsers, faHandshake, faEnvelope, faCalendar } from '@fortawesome/free-solid-svg-icons';
 
 function Nevbar() {
     const scrollTo = (id) => {
@@ -15,7 +15,7 @@ function Nevbar() {
         <div className="floating-icons">
             <div onClick={() => scrollTo('home')}><FontAwesomeIcon icon={faHome} /></div>
             <div onClick={() => scrollTo('about')}><FontAwesomeIcon icon={faUsers} /></div>
-            <div onClick={() => scrollTo('events')}><FontAwesomeIcon icon={faUsers} /></div>
+            <div onClick={() => scrollTo('events')}><FontAwesomeIcon icon={faCalendar} /></div>
             <div onClick={() => scrollTo('sponsors')}><FontAwesomeIcon icon={faHandshake} /></div>
             <div onClick={() => scrollTo('contact')}><FontAwesomeIcon icon={faEnvelope} /></div>
         </div>
@@ -23,3 +23,4 @@ function Nevbar() {
 };
 
 export default Nevbar;
+

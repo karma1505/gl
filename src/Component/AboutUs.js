@@ -9,23 +9,14 @@ function AboutUs() {
 
                 <section className="content">
                     <div className="content__descriptor">
-                        <h4 className="content__text">
-                            Our Mission
-                        </h4>
                         <p className="content__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Join us at Glitch 24, the ultimate tech fest showcasing exhilarating competitions like Robowars, Micro Mouse Maze, and CTF challenges. Immerse yourself in cutting-edge technology, innovation, and friendly competition. Explore the future of robotics, conquer coding challenges, and witness mind-bending tech battles. 
                         </p>
                     </div>
 
                     <div className="content__text-box">
-                        <h4 className="content__text">
-                            Who We Are
-                        </h4>
                         <p className="content__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                        <p className="content__text">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Unleash your skills, connect with like-minded enthusiasts, and experience the thrill of Glitch 24, where technology and talent collide for an unforgettable celebration of innovation.
                         </p>
                     </div>
                 </section>

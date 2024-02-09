@@ -17,10 +17,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-
-  /* Set background color to black */
-  /* background-color: #000000; */
-
   background: url('./Assets/bg.jpg') no-repeat center center fixed;
   background-size: cover;
   /* opacity: 0.7; */
@@ -120,32 +116,28 @@ section {
 
 .floating-icons div {
   width: 40px;
-  /* Increase button width */
   height: 40px;
-  /* Increase button height */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-  /* Increase margin between buttons */
   background-color: #111111;
   color: white;
-  border-radius: 50%;
+  border-radius: 40%;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-size: 15px;
 }
 
 .floating-icons div:hover {
   background-color: #333333;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .floating-icons {
-    left: auto;
-    right: 10px;
+    display: none; 
   }
 }
-
 
 /* //////////////////////////////////////  NEVBAR ////////////////////////////////////////// */
 
@@ -701,10 +693,13 @@ h3 {
     /* Adjust font size for smaller screens */
     letter-spacing: 10px;
     /* Adjust letter spacing for smaller screens */
+    text-align: center;
+
   }
 
   .subtitle {
     font-size: clamp(18px, 2vw, 24px);
+    text-align: center;
     /* Adjust font size for smaller screens */
   }
 }
@@ -733,38 +728,52 @@ h3 {
 /* /////////////////////////////////////////////////// COUNTDOWN ///////////////////////////////////////////////////// */
 
 .timer {
-  background-color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 20px; 
 }
 
-.timer div {
+.timer-item {
   text-align: center;
-  background: transparent;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  border-radius: 8px;
+  padding: 0 20px;
 }
 
-.timer div h2 {
-  font-size: 1.5em;
-  margin-top: 10px;
+.timer-item p {
+  font-size: 8em; 
+  margin: 0; 
+  color: white;
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
 }
 
-.timer-box {
-  background-color: #000000;
-  /* Set your desired background color here */
-  padding: 3rem;
-  /* Adjust padding as needed */
-  border-radius: 8px;
-  /* Optional: Add border-radius for rounded corners */
+.timer-item h2 {
+  font-size: 2.5em; 
+  margin: 0;
+  color: white;
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .timer {
+    flex-direction: row; /* Stack timer items vertically */
+    gap: 10px; /* Reduce gap between timer items */
+  }
 
+  .timer-item {
+    padding: 0 10px; /* Adjust vertical padding */
+  }
+
+  .timer-item p {
+    font-size: 2em; /* Decrease font size for smaller screens */
+  }
+
+  .timer-item h2 {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+  }
+}
 /* /////////////////////////////////////////////////// ABOUTUS ///////////////////////////////////////////////////// */
 
 
@@ -816,7 +825,6 @@ h3 {
   text-align: center;
   color: #333;
 }
-
 .content {
   display: flex;
   flex-direction: column;
@@ -830,9 +838,9 @@ h3 {
   /* Add some margin between sections */
 }
 
+/* Remove border-right property from .content__descriptor */
 .content__descriptor {
-  border-right: none;
-  /* Remove border on small screens */
+  /* border-right: none; */
   padding-right: 0;
   /* Remove padding on small screens */
   margin-right: 0;
@@ -846,7 +854,6 @@ h3 {
 
 .content__text {
   color: #ffffff;
-  line-height: 1.6;
   font-size: 1.8rem;
 }
 
@@ -857,7 +864,6 @@ h3 {
   }
 
   .content__descriptor {
-    border-right: 1px solid #000000;
     padding-right: 3rem;
     margin-right: 3rem;
   }
@@ -866,7 +872,6 @@ h3 {
     padding-left: 3rem;
   }
 }
-
 
 
 /* ///////////////////////////////////////// contectus ////////////////////////////////////// */
