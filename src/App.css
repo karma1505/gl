@@ -876,21 +876,20 @@ h3 {
 
 /* ///////////////////////////////////////// contectus ////////////////////////////////////// */
 
+/* Adjusted CSS with corrections and improvements */
 
-.right_conatct_social_icon {
-  background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+/* General styles */
+.social-icons {
+  z-index: 5; /* Adjust z-index as needed */
 }
 
 .contact_us {
   background-color: #000000;
   padding: 0%;
   background-size: cover;
-
-
 }
 
 .contact_inner {
-
   position: relative;
   box-shadow: 20px 22px 44px #013cfecc;
   border-radius: 25px;
@@ -909,7 +908,7 @@ h3 {
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .contact_field p {
@@ -966,9 +965,8 @@ h3 {
   letter-spacing: 1px;
 }
 
-.form-control form-group {
+.form-control.form-group { /* Corrected selector */
   color: #000000;
-
 }
 
 button.contact_form_submit {
@@ -1005,7 +1003,7 @@ button.contact_form_submit {
 .map_inner h4,
 .map_inner p {
   color: #000;
-  text-align: center
+  text-align: center;
 }
 
 .map_inner p {
@@ -1015,7 +1013,6 @@ button.contact_form_submit {
 .map_bind {
   margin-top: 50px;
   border-radius: 30px;
-  overflow: hidden;
 }
 
 
