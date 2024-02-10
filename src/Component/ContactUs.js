@@ -1,30 +1,33 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiscord, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const openInstagram = () => {
-  window.open('https://www.instagram.com/shooliniuniversity/', '_blank');
+  window.open('https://www.instagram.com/glitch.shoolini/', '_blank');
 };
 
 const openTwitter = () => {
-  window.open('https://twitter.com/ShooliniUniv', '_blank');
+  window.open('https://twitter.com/glitchshoolini', '_blank');
 };
 
-const openDiscord = () => {
-    window.open('https://discord.gg/s5fDEaXFjx', '_blank');
+const openShoolini = () => {
+    window.open('https://shooliniuniversity.com/contact', '_blank');
 };
 
 const CustomSocials = () => {
   return (
-    <div className="floating-icons-right">
-      <div onClick={openInstagram}>
-        <FontAwesomeIcon icon={faInstagram} />
+    <div className="social-icons">
+      <div className="social-icon" onClick={openInstagram}>
+        <FontAwesomeIcon icon={faInstagram} size="3x" />
       </div>
-      <div onClick={openTwitter}>
-        <FontAwesomeIcon icon={faTwitter} />
+      <div className="social-icon" onClick={openTwitter}>
+        <FontAwesomeIcon icon={faTwitter} size="3x" />
       </div>
-      <div onClick={openDiscord}>
-        <FontAwesomeIcon icon={faDiscord} />
+      <div className="social-icon" onClick={openShoolini}>
+        <FontAwesomeIcon icon={faGlobe} size="3x" />
       </div>
     </div>
   );
