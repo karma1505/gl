@@ -21,7 +21,6 @@ function App() {
         <div className='home' id='home'>
           <div className='main'>
             <div className="hero-container">
-              {/* </div> */}
               <h1 className="hero glitch layers" data-text="glitch"><span>GLITCH</span></h1>
               <br />
               <h3 className='subtitle'><span><b>UNLEASHING INNOVATION</b></span></h3>

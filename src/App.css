@@ -19,9 +19,8 @@ body {
   font-family: 'Arial', sans-serif;
   background: url('./Assets/tron.jpg') no-repeat center center fixed;
   background-size: cover;
-  /* opacity: 0.7; */
-  /* Adjust opacity as needed */
   min-height: 100vh;
+  background-attachment: fixed;
 
   .environment {}
 
@@ -177,6 +176,12 @@ section {
     font-size: 2.5rem;
     /* Adjust font size for smaller screens */
   }
+
+
+  .hero glitch layers {
+    text-align: center;
+    padding-left:2px;
+  }
 }
 
 .main {
@@ -189,6 +194,8 @@ section {
   align-items: center;
   /* background-color: rgb(5, 5, 5); */
 }
+
+
 
 
 /* /////////////////////////////////////////////////// animation glitch ///////////////////////////////////////////////// */
@@ -890,10 +897,46 @@ h3 {
   cursor: pointer;
 }
 
+.sulogo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.glogo {
+  margin: auto;
+}
+
+.home {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main {
+  margin: auto;
+  margin-top: 70px;
+  position: relative;
+  text-align: center;
+  height: 600px;
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-para {
+    white-space: nowrap; /* Prevent wrapping */
+    text-overflow: ellipsis;
+  }
+}
+
 
 .social-icons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   color: white;
   gap: 20px;
 }
@@ -908,10 +951,17 @@ h3 {
   position: relative;
   box-shadow: 20px 22px 44px #013cfecc;
   border-radius: 25px;
+  justify-content: center;
+  margin-left:auto;
+  margin-right: 2px; 
+  width: 70%; 
+  max-width: 1200px; 
 }
 
+
+
 .contact_field {
-  padding: 60px 340px 90px 100px;
+  padding: 60px 34px 90px 100px;
 }
 
 .right_conatct_social_icon {
@@ -919,37 +969,25 @@ h3 {
 }
 
 .contact_field h3 {
+  position: relative;
   color: #f7f7f7;
   font-size: 40px;
   letter-spacing: 1px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  text-align: center; /* Center the text horizontally */
 }
+
 
 .contact_field p {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   letter-spacing: 1px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.contact_field .form-control {
-  border-radius: 0px;
-  border: none;
-  border-bottom: 1px solid #000000;
-}
-
-.contact_field .form-control:focus {
-  box-shadow: none;
-  outline: none;
-  border-bottom: 2px solid #1325e8;
-}
-
-.contact_field .form-control::placeholder {
-  font-size: 13px;
-  letter-spacing: 1px;
-}
 
 .contact_info_sec {
   position: absolute;
@@ -1017,7 +1055,7 @@ button.contact_form_submit {
 
 .map_inner h4,
 .map_inner p {
-  color: #000;
+  color: white;
   text-align: center;
 }
 
@@ -1029,6 +1067,9 @@ button.contact_form_submit {
   margin-top: 50px;
   border-radius: 30px;
 }
+
+
+
 
 
 /* /////////////////////////////////////////// EVENTS ////////////////////////////////////////////////// */
@@ -1050,7 +1091,7 @@ button.contact_form_submit {
 
 .event-card {
   width: 300px;
-  height: 400px;
+  height: 50px;
   margin: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   /* Adjust the opacity here */
