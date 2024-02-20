@@ -59,15 +59,13 @@ function ContactUs() {
       </section>
       <div className="container">
         <div className="row">
-          <div className="col-md-8 offset-md-1">
             <div className="contact_inner">
               <div className="row">
-                <div className="col-md-10">
                   <div className="contact_form_inner">
                     <div className="contact_field">
                       <h3>Contact Us</h3>
                       <p className="contact-para">
-                        Feel free to contact us any time...
+                        Feel free to contact us any time...<br />
                         We won't leave you on read.
                       </p>
                       <CustomSocials />
@@ -77,8 +75,6 @@ function ContactUs() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </>
   );
 }

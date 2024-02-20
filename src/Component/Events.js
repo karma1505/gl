@@ -25,8 +25,8 @@ function Events() {
 
                     <Card className="event-card">
                         <Card.Body>
-                            <Card.Img variant="top" alt="poster" src="esports_poster.jpg" />
-                            <Button variant="primary" href="registration_esports">Register</Button>
+                            <Card.Img variant="top" alt="e-sports" src="esports_poster.jpg" />
+                            <Button variant="primary" href="https://shorturl.at/DRSW3">Register</Button>
                         </Card.Body>
                     </Card>
 

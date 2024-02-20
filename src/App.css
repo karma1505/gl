@@ -19,15 +19,21 @@ body {
   font-family: 'Arial', sans-serif;
   background: url('./Assets/tron.jpg') no-repeat center center fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100%;
   background-attachment: fixed;
-
-  .environment {}
-
-  /* Set text color to white */
 }
 
-
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('./Assets/tron.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    background-attachment: fixed;
+  }
+}
 
 .page-section {
   margin-bottom: 20px;
@@ -143,8 +149,17 @@ section {
 
 .sulogo {
   position: absolute;
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 15px;
+  left: 10%;
+  transform: translateX(-10%);
+}
+
+@media screen and (max-width: 768px) {
+  .sulogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .glogo {
@@ -155,10 +170,8 @@ section {
 
 .home {
   text-align: center;
-  height: 100vh;
-  /* Adjust height to fill the viewport */
+  min-height: 100%;
   width: 100%;
-  /* background-color: rgb(0, 0, 0); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,12 +190,27 @@ section {
     /* Adjust font size for smaller screens */
   }
 
-
-  .hero glitch layers {
-    text-align: center;
-    padding-left:2px;
+  /* Adjust glitch logo positioning for smaller screens */
+  .hero-container {
+    position: relative; /* Ensure relative positioning for absolute child */
   }
+
+  .glitch.layers {
+    margin-left: 0; /* Reset margin */
+    padding-left: 0; /* Reset padding */
+    position: absolute; /* Position glitch logo absolutely within hero-container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    bottom: 0; /* Position at the bottom */
+  }
+
+  .subtitle {
+    display: none;
+  }
+
+
 }
+
 
 .main {
   margin: auto;
@@ -211,8 +239,6 @@ h2 {
   /* Adjust accordingly */
 }
 
-/* Adjust accordingly */
-/* Adjust accordingly */
 
 h3 {
   /*
@@ -909,7 +935,7 @@ h3 {
 
 .home {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -961,7 +987,7 @@ h3 {
 
 
 .right_conatct_social_icon {
-  height: 100%;
+  min-height: 100%;
 }
 
 .contact_field h3 {
@@ -1071,7 +1097,7 @@ button.contact_form_submit {
 /* /////////////////////////////////////////// EVENTS ////////////////////////////////////////////////// */
 .event-page-container {
   background-size: cover;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
