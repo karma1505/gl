@@ -984,8 +984,6 @@ h3 {
 }
 
 
-
-
 .right_conatct_social_icon {
   min-height: 100%;
 }
@@ -1111,38 +1109,80 @@ button.contact_form_submit {
 }
 
 .event-card {
-  width: 300px;
-  height: 50px;
+  width: 300px; /* Adjust the width as needed */
   margin: 10px;
-  background-color: #000000;
-  /* Adjust the opacity here */
-  border-radius: 10px;
-  color: #000000;
-  transition: box-shadow 0.3s, background-color 0.3s;
-  /* Add transition for smoother effect */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  /* Add slight shadow */
-
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    /* Adjust the hover opacity here */
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-    /* Increase shadow on hover */
-  }
-
-  .card-img-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-
-  .card-body {
-    text-align: center;
-  }
-
-  .btn-primary {
-    margin-top: 170px;
-  }
+  border: none; /* Remove border */
+  border-radius: 20px; /* Adjust the border radius to create curved corners */
+  overflow: hidden;
 }
+
+.event-card .card-body {
+  padding: 0; /* Remove padding for Card.Body */
+}
+
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.event-card .btn-primary {
+  width: 100%;
+  border-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.event-card .btn-primary:focus {
+  box-shadow: none; /* Remove button focus shadow */
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Add transition effect to the image */
+}
+
+.card:hover img {
+  transform: scale(1.25) /* Increase image size on hover */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: height 0.3s ease; /* Add transition effect to the overlay height */
+}
+
+.card:hover .overlay {
+  height: 100%; /* Expand the overlay to cover the image on hover */
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add transition effect to the text opacity */
+}
+
+.card:hover .text {
+  opacity: 1; /* Show text on hover */
+}
+
 
 /* /////////////////////////////////////////// EVENTS ////////////////////////////////////////////////// */
 
