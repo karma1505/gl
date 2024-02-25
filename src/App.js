@@ -37,6 +37,7 @@ function App() {
         </div>
         <div className='components' id='sponsors'>
           <Sponsors />
+
         </div>
         <div className='components' id='contact'>
           <ContactUs />
