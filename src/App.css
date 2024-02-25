@@ -886,6 +886,7 @@ h3 {
 }
 
 .content__text {
+  font-family:"Montserrat";
   color: #ffffff;
   font-size: 1.8rem;
 }
@@ -953,6 +954,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .contact-para {
+    font-family:"Montserrat";
     white-space: nowrap; /* Prevent wrapping */
     text-overflow: ellipsis;
   }
@@ -1000,6 +1002,7 @@ h3 {
 
 
 .contact_field p {
+  font-family:"Montserrat";
   color: #ffffff;
   font-size: 2rem;
   font-weight: 400;
