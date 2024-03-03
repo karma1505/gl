@@ -1091,6 +1091,7 @@ button.contact_form_submit {
 
 
 /* /////////////////////////////////////////// EVENTS ////////////////////////////////////////////////// */
+
 .event-page-container {
   background-size: cover;
   min-height: 100%;
@@ -1102,28 +1103,51 @@ button.contact_form_submit {
 
 .event-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .event-card {
   width: 300px;
   margin: 2rem;
   cursor: pointer;
   position: relative;
-  overflow: hidden; /* Hide overflowing content */
-  max-height: 300px; /* Set a maximum height to limit initial card size */
-  transition: max-height 0.9s ease; /* Add transition for smooth animation */
+  overflow: hidden;
+  max-height: 300px;
+  transition: max-height 0.9s ease;
+  /* Add gradient glow */
+  box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 20px 6px rgba(255, 0, 0, 0.5), 0 0 30px 9px rgba(0, 0, 128, 0.3);
+  border-radius: 10px;
 }
 
+/* Add hover effect for glow */
 .event-card:hover {
-  max-height: 1000px; /* Expand the card height on hover */
+  max-height: 1000px;
+  box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 120px 6px rgba(255, 0, 0, 0.5), 0 0 60px 9px rgba(0, 0, 128, 0.3);
+  animation: glowAnimation 2s infinite alternate; /* Apply animation on hover */
 }
+
+/* Define animation */
+@keyframes glowAnimation {
+  0%, 100% {
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 20px 6px rgba(255, 0, 0, 0.5), 0 0 30px 9px rgba(0, 0, 128, 0.3);
+  }
+  25% {
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 50px 6px rgba(255, 0, 0, 0.5), 0 0 30px 9px rgba(0, 0, 128, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 100px 6px rgba(255, 0, 0, 0.5), 0 0 30px 9px rgba(0, 0, 128, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.7), 0 0 50px 6px rgba(255, 0, 0, 0.5), 0 0 30px 9px rgba(0, 0, 128, 0.3);
+  }
+}
+
+
 
 .card img {
   width: 100%;
   height: auto;
-  opacity: 0.89;
+  opacity: 1;
   transition: opacity 0.9s ease-out;
 }
 
@@ -1156,8 +1180,6 @@ button.contact_form_submit {
   transform: translateX(-50%);
   border-radius: 5px;
   font-size: 12px;
-  background-color: #000000;
-  border-color: #000000;
 }
 
 .event-card:hover img {

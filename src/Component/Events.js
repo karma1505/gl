@@ -8,8 +8,8 @@ function EventCard({ title, imageUrl, content, registerLink }) {
             <div className="event-image-container">
                 <Card.Img variant="top" src={imageUrl} alt={title} />
                 <div className="event-text-overlay">
-                    <h1>PRIZES WORTH Rs. 50000</h1>
-                    <p>Register By 4 March</p>
+                    <h1>PRIZES WORTH Rs. XX000</h1>
+                    <p>Register By 9 March</p>
                 </div>
             </div>
             <Card.Body>
@@ -23,7 +23,7 @@ function EventCard({ title, imageUrl, content, registerLink }) {
 
 export default function Events() {
     return (
-        <div className="container">
+        <div className="container black-bg"> {/* Add black-bg class */}
             <h2 className="page-title">Events</h2>
             <div className="event-page-container">
                 <div className="event-cards">
@@ -46,15 +46,9 @@ export default function Events() {
                         registerLink="https://shorturl.at/DRSW3"
                     />
                     <EventCard
-                        title="MICRO MOUSE MAZE"
-                        imageUrl={require("../Assets/mmm.png")}
-                        content="Craft Your Nimble MouseBot And Let It Sprint Through Intricate Circuits. With Speed, Precision And Ingenuity Will Lil Stuart Navigate The Maze?"
-                        registerLink="https://shorturl.at/zABG0"
-                    />
-                    <EventCard
                         title="ROBOWARS"
                         imageUrl={require("../Assets/robo.png")}
-                        content="Craft A Fierce Robot For The Ultimate Battle , Blending Cunning Design And Either Control Brilliance To Conquer Adversaries In The Thrilling Arena Of Robots ."
+                        content="Craft A Fierce Robot For The Ultimate Battle , Blending Cunning Design And Control Brilliance To Conquer Adversaries In The Thrilling Arena Of Robots ."
                         registerLink="https://shorturl.at/lIKP1"
                     />
                 </div>
