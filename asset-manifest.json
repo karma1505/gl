@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/gl/static/css/main.3de0a6d3.css",
-    "main.js": "/gl/static/js/main.a2ee0a43.js",
+    "main.css": "/gl/static/css/main.9b8f9fd6.css",
+    "main.js": "/gl/static/js/main.6bd4702b.js",
     "static/js/592.83d3f26e.chunk.js": "/gl/static/js/592.83d3f26e.chunk.js",
     "static/media/hackathon.png": "/gl/static/media/hackathon.ae83ae92c73ffd6d877a.png",
-    "static/media/mmm.png": "/gl/static/media/mmm.47801a2bc7400b3facb5.png",
     "static/media/robo.png": "/gl/static/media/robo.449afb55bfe84a46fa50.png",
     "static/media/ctf.png": "/gl/static/media/ctf.1383a38c7465f4dea698.png",
     "static/media/tron.jpg": "/gl/static/media/tron.c05430a235cc5a1782c3.jpg",
     "static/media/gaming.png": "/gl/static/media/gaming.6e4dc5d601ffad59bbcd.png",
     "index.html": "/gl/index.html",
-    "main.3de0a6d3.css.map": "/gl/static/css/main.3de0a6d3.css.map",
-    "main.a2ee0a43.js.map": "/gl/static/js/main.a2ee0a43.js.map",
+    "main.9b8f9fd6.css.map": "/gl/static/css/main.9b8f9fd6.css.map",
+    "main.6bd4702b.js.map": "/gl/static/js/main.6bd4702b.js.map",
     "592.83d3f26e.chunk.js.map": "/gl/static/js/592.83d3f26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3de0a6d3.css",
-    "static/js/main.a2ee0a43.js"
+    "static/css/main.9b8f9fd6.css",
+    "static/js/main.6bd4702b.js"
   ]
 }
