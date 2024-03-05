@@ -10,36 +10,29 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>GLITCH 24</title>
+  <style>
+    .content-container {
+      z-index: 1; /* Ensure content is above the video */
+      /* Add additional styling for content container as needed */
+    }
+
+    .video-background {
+      width: 100%; /* Set width to fill the viewport */
+      height: auto; /* Maintain aspect ratio */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1; /* Send the image to the back */
+    }
+
+    @media only screen and (max-width: 600px) {
+      /* Adjust styling for mobile devices */
+      .video-background {
+        display: none; /* Hide the background image on mobile */
+      }
+    }
+  </style>
 </head>
-<style>
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
-}
-
-.content-container {
-  z-index: 1; /* Ensure content is above the video */
-  /* Add additional styling for content container as needed */
-}
-
-@media (min-width: 768px) {
-  .video-background {
-    display: none; /* Hide video on larger screens */
-  }
-  
-  .content-container {
-    z-index: 1; /* Ensure content is above the video */
-    /* Add additional styling for content container as needed */
-  }
-}
-  
-
-</style>
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <img src="./src/Assets/tron.jpg" class="video-background" alt="background image">
